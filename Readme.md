@@ -135,9 +135,9 @@ def __init__(self):
     self.lock = threading.Lock()
 ```
 
-It creates an empty list (self.inventory) to store the items and a Lock object (self.lock) to ensure thread safety.
+```self.inventory = []``` It creates an empty list (self.inventory) to store the items.
 
-```self.lock = threading.Lock():`` A Lock ensures that only one thread can modify the inventory at any given time, preventing data corruption in a multithreaded environment.
+```self.lock = threading.Lock():``` A Lock ensures that only one thread can modify the inventory at any given time, preventing data corruption in a multithreaded environment.
 
 4) Adds an item to the inventory in a thread-safe manner.
 ```python
@@ -148,6 +148,7 @@ def add_item(self, item):
 ```
 
 ```self.inventory.append(item):``` Appends the given item to the inventory list.
+
 ```print(f"Added to inventory: {item}"):``` Prints a message indicating that the item was successfully added.
 
 5) This method generates items by creating an initial item using the ItemFactory and then cloning that item to create the specified number of copies.
