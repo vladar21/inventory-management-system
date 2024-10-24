@@ -261,3 +261,26 @@ inventory_manager.add_item(desk_for_teacher)
 ```python
 inventory_manager.show_inventory()
 ```
+
+## Result
+
+```bash
+$ python main.py
+Added to inventory: ID: 1, Desk (height: 75, material: wood, type: pupil)
+Added to inventory: ID: 2, Desk (height: 75, material: wood, type: pupil)
+Added to inventory: ID: 3, Desktop (processor: Intel i5, RAM: 16, type: workstation)
+Added to inventory: ID: 4, Desk (height: 75, material: wood, type: pupil)
+Added to inventory: ID: 5, Desktop (processor: Intel i5, RAM: 16, type: workstation)
+Added to inventory: ID: 6, Desktop (processor: Intel i5, RAM: 16, type: workstation)
+Added to inventory: ID: 8, Desk (height: 75, material: wood, type: teacher)
+
+Current Inventory:
+ID: 1, Desk (height: 75, material: wood, type: pupil)
+ID: 2, Desk (height: 75, material: wood, type: pupil)
+ID: 3, Desktop (processor: Intel i5, RAM: 16, type: workstation)
+ID: 4, Desk (height: 75, material: wood, type: pupil)
+ID: 5, Desktop (processor: Intel i5, RAM: 16, type: workstation)
+ID: 6, Desktop (processor: Intel i5, RAM: 16, type: workstation)
+ID: 8, Desk (height: 75, material: wood, type: teacher)
+------------------------------
+```
