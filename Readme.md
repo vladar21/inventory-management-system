@@ -136,6 +136,7 @@ def __init__(self):
 ```
 
 It creates an empty list (self.inventory) to store the items and a Lock object (self.lock) to ensure thread safety.
+
 ```self.lock = threading.Lock():`` A Lock ensures that only one thread can modify the inventory at any given time, preventing data corruption in a multithreaded environment.
 
 4) Adds an item to the inventory in a thread-safe manner.
@@ -202,9 +203,11 @@ from inventory_item import ItemFactory
 ```from inventory_item import ItemFactory:``` Imports the ItemFactory class from inventory_item.py to create new inventory items.
 
 2) Start
+```python
 if __name__ == "__main__":
     inventory_manager = InventoryManager()
     factory = ItemFactory()
+```
 
 ```if __name__ == "__main__":``` Ensures that the code inside this block runs only when the script is executed directly, not when imported as a module.
 
